@@ -1,0 +1,30 @@
+{
+  "name": "aws-lambda-block-render-service",
+  "version": "1.0.0",
+  "description": "An AWS Lambda function that renders and captures screenshots of WordPress blocks in HTML.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arunshenoy99/aws-lambda-block-render-service.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Arun Shenoy",
+    "email": "devarunshenoy99@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arunshenoy99/aws-lambda-block-render-service/issues"
+  },
+  "homepage": "https://github.com/arunshenoy99/aws-lambda-block-render-service#readme",
+  "dependencies": {
+    "@sparticuz/chromium": "^121.0.0",
+    "puppeteer-core": "^22.0.0"
+  },
+  "devDependencies": {
+    "puppeteer": "^22.0.0"
+  }
+}
