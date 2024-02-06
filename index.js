@@ -3,9 +3,10 @@ const chromium = require("@sparticuz/chromium");
 
 exports.handler = async (event) => {
 
-  const width = event.width || 1200;
-  const height = event.height || 900;
-  const content = event.content || "";
+  const requestBody = JSON.parse(event.body);
+  const width = requestBody.width || event.width || 1200;
+  const height = requestBody.height || event.height || 900;
+  const content = requestBody.content || event.content || "";
 
   const browser = await puppeteer.launch({
     args: chromium.args,
